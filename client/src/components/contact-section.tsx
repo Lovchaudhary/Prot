@@ -9,7 +9,7 @@ export default function ContactSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold mb-8"
+          className="text-4xl font-bold mb-8 text-black"
         >
           Let's Work Together
         </motion.h2>
@@ -31,14 +31,14 @@ export default function ContactSection() {
         >
           <a 
             href="mailto:hello@joeward.dev" 
-            className="bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-colors flex items-center justify-center gap-2"
+            className="bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 font-medium"
           >
             <Mail className="w-5 h-5" />
             Get In Touch
           </a>
           <a 
             href="#" 
-            className="border-2 border-black text-black px-8 py-4 rounded-full hover:bg-black hover:text-white transition-colors flex items-center justify-center gap-2"
+            className="border-2 border-black text-black px-8 py-4 rounded-full hover:bg-black hover:text-white transition-colors flex items-center justify-center gap-2 font-medium"
           >
             <Download className="w-5 h-5" />
             Download Resume
@@ -51,16 +51,16 @@ export default function ContactSection() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="flex justify-center space-x-8"
         >
-          <a href="#" className="text-2xl hover:text-blue-500 transition-colors" title="Instagram">
+          <a href="#" className="text-2xl text-black hover:text-gray-600 transition-colors" title="Instagram">
             <Instagram />
           </a>
-          <a href="#" className="text-2xl hover:text-blue-500 transition-colors" title="GitHub">
+          <a href="#" className="text-2xl text-black hover:text-gray-600 transition-colors" title="GitHub">
             <Github />
           </a>
-          <a href="#" className="text-2xl hover:text-blue-500 transition-colors" title="LinkedIn">
+          <a href="#" className="text-2xl text-black hover:text-gray-600 transition-colors" title="LinkedIn">
             <Linkedin />
           </a>
-          <a href="#" className="text-2xl hover:text-blue-500 transition-colors" title="Twitter">
+          <a href="#" className="text-2xl text-black hover:text-gray-600 transition-colors" title="Twitter">
             <Twitter />
           </a>
         </motion.div>
