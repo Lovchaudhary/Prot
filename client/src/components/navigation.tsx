@@ -13,7 +13,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-gray-300 z-50">
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div className="text-xl font-bold cursor-pointer text-black" onClick={() => scrollToSection('hero')}>
