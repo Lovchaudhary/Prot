@@ -3,7 +3,7 @@ import { Instagram, Github, Linkedin, Twitter, Mail, Download } from "lucide-rea
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-20 px-6 bg-white">
+    <section id="contact" className="py-20 px-6 bg-background">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2 
           initial={{ opacity: 0, y: 30 }}

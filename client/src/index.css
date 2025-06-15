@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(0, 0%, 100%);
+  --background: hsl(45, 20%, 96%);
   --foreground: hsl(0, 0%, 0%);
-  --muted: hsl(0, 0%, 96%);
+  --muted: hsl(45, 15%, 92%);
   --muted-foreground: hsl(0, 0%, 45%);
-  --popover: hsl(0, 0%, 100%);
+  --popover: hsl(45, 20%, 96%);
   --popover-foreground: hsl(0, 0%, 0%);
   --card: hsl(0, 0%, 100%);
   --card-foreground: hsl(0, 0%, 0%);
-  --border: hsl(0, 0%, 90%);
+  --border: hsl(0, 0%, 85%);
   --input: hsl(0, 0%, 90%);
   --primary: hsl(0, 0%, 0%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(0, 0%, 96%);
+  --secondary: hsl(45, 15%, 92%);
   --secondary-foreground: hsl(0, 0%, 0%);
-  --accent: hsl(0, 0%, 96%);
+  --accent: hsl(45, 15%, 92%);
   --accent-foreground: hsl(0, 0%, 0%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(0, 0%, 100%);
