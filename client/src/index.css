@@ -63,20 +63,12 @@
 }
 
 @layer components {
-  .timeline-line {
-    @apply absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-300;
+  /* Custom animations and effects for portfolio */
+  .skill-card-hover {
+    @apply transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-2;
   }
 
-  .timeline-dot {
-    @apply absolute left-1/2 transform -translate-x-1/2 w-3 h-3 bg-blue-500 rounded-full border-2 border-white shadow-sm;
-    box-shadow: 0 0 0 3px #e5e7eb;
-  }
-
-  .project-card {
-    @apply transition-transform duration-300 ease-in-out;
-  }
-
-  .project-card:hover {
-    @apply scale-105;
+  .project-image-hover {
+    @apply transition-transform duration-500 ease-in-out group-hover:scale-110;
   }
 }
