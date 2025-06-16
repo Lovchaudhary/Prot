@@ -11,94 +11,110 @@ export default function HeroSection() {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center px-6 bg-background relative overflow-hidden">
-      {/* Complete Office Background - Line Art Style */}
+      {/* Office Background - Exact recreation of reference image */}
       <div className="absolute inset-0 w-full h-full">
-        <svg width="100%" height="100%" viewBox="0 0 1200 800" fill="none" className="opacity-[0.08]" preserveAspectRatio="xMidYMid slice">
-          {/* Ceiling and structure */}
-          <path d="M0 0 L200 150 L1000 150 L1200 0" stroke="#000" strokeWidth="2" fill="none"/>
-          <path d="M200 150 L200 800" stroke="#000" strokeWidth="2"/>
-          <path d="M1000 150 L1000 800" stroke="#000" strokeWidth="2"/>
-          <path d="M0 800 L1200 800" stroke="#000" strokeWidth="2"/>
+        <svg width="100%" height="100%" viewBox="0 0 1000 600" fill="none" className="opacity-[0.06]" preserveAspectRatio="xMidYMid slice">
+          {/* Ceiling grid */}
+          <path d="M100 0 L200 80 L800 80 L900 0" stroke="#000" strokeWidth="1.5" fill="none"/>
+          <path d="M200 80 L800 80" stroke="#000" strokeWidth="1"/>
+          <line x1="300" y1="70" x2="400" y2="0" stroke="#000" strokeWidth="1"/>
+          <line x1="400" y1="70" x2="500" y2="0" stroke="#000" strokeWidth="1"/>
+          <line x1="500" y1="70" x2="600" y2="0" stroke="#000" strokeWidth="1"/>
+          <line x1="600" y1="70" x2="700" y2="0" stroke="#000" strokeWidth="1"/>
+          
+          {/* Left wall with windows */}
+          <path d="M0 100 L200 80 L200 600" stroke="#000" strokeWidth="2"/>
+          <rect x="20" y="120" width="60" height="80" fill="none" stroke="#000" strokeWidth="1.5"/>
+          <rect x="100" y="140" width="60" height="80" fill="none" stroke="#000" strokeWidth="1.5"/>
+          <line x1="50" y1="120" x2="50" y2="200" stroke="#000" strokeWidth="1"/>
+          <line x1="20" y1="160" x2="80" y2="160" stroke="#000" strokeWidth="1"/>
+          <line x1="130" y1="140" x2="130" y2="220" stroke="#000" strokeWidth="1"/>
+          <line x1="100" y1="180" x2="160" y2="180" stroke="#000" strokeWidth="1"/>
+          
+          {/* Right wall */}
+          <path d="M800 80 L1000 100 L1000 600 L800 600" stroke="#000" strokeWidth="2"/>
+          
+          {/* Floor perspective lines */}
+          <path d="M200 600 L400 400 L600 400 L800 600" stroke="#000" strokeWidth="1" fill="none"/>
           
           {/* Left side workstations */}
-          <rect x="50" y="400" width="120" height="60" fill="none" stroke="#000" strokeWidth="2"/>
-          <rect x="80" y="350" width="60" height="40" fill="none" stroke="#000" strokeWidth="2"/>
-          <circle cx="110" cy="330" r="15" fill="none" stroke="#000" strokeWidth="2"/>
-          <path d="M60 460 Q50 440 70 420" stroke="#000" strokeWidth="2" fill="none"/>
+          <rect x="50" y="350" width="80" height="40" fill="none" stroke="#000" strokeWidth="2"/>
+          <rect x="70" y="320" width="40" height="25" fill="none" stroke="#000" strokeWidth="1.5"/>
+          <circle cx="90" cy="300" r="8" fill="none" stroke="#000" strokeWidth="1.5"/>
           
-          <rect x="220" y="450" width="100" height="50" fill="none" stroke="#000" strokeWidth="2"/>
-          <rect x="240" y="400" width="60" height="40" fill="none" stroke="#000" strokeWidth="2"/>
-          <circle cx="270" cy="380" r="12" fill="none" stroke="#000" strokeWidth="2"/>
+          {/* Left person at desk */}
+          <circle cx="70" cy="310" r="8" fill="#000"/>
+          <path d="M70 318 L70 350" stroke="#000" strokeWidth="2"/>
+          <path d="M58 330 L70 325 L82 330" stroke="#000" strokeWidth="1.5"/>
           
-          {/* Center aisle and furniture */}
-          <path d="M400 200 L800 200 L900 500 L300 500 Z" stroke="#000" strokeWidth="1" fill="none"/>
+          <rect x="140" y="380" width="70" height="35" fill="none" stroke="#000" strokeWidth="2"/>
+          <rect x="155" y="355" width="35" height="20" fill="none" stroke="#000" strokeWidth="1.5"/>
+          <circle cx="172" cy="340" r="6" fill="none" stroke="#000" strokeWidth="1.5"/>
           
-          {/* Reception/central area */}
-          <rect x="500" y="300" width="200" height="80" fill="none" stroke="#000" strokeWidth="2"/>
-          <rect x="520" y="280" width="160" height="30" fill="none" stroke="#000" strokeWidth="2"/>
-          <circle cx="600" cy="260" r="8" fill="none" stroke="#000" strokeWidth="2"/>
+          {/* Second left person */}
+          <circle cx="155" cy="350" r="7" fill="#000"/>
+          <path d="M155 357 L155 380" stroke="#000" strokeWidth="2"/>
+          <path d="M145 368 L155 363 L165 368" stroke="#000" strokeWidth="1.5"/>
+          
+          {/* Plant in corner */}
+          <rect x="40" y="500" width="20" height="20" fill="none" stroke="#000" strokeWidth="2"/>
+          <path d="M50 500 Q45 485 48 470 Q50 468 52 470 Q55 485 50 500" fill="none" stroke="#000" strokeWidth="2"/>
+          <path d="M35 480 Q50 465 65 480" fill="none" stroke="#000" strokeWidth="2"/>
+          <circle cx="38" cy="485" r="3" fill="#000"/>
+          
+          {/* Center area tables/reception */}
+          <rect x="320" y="250" width="120" height="50" fill="none" stroke="#000" strokeWidth="2"/>
+          <rect x="330" y="230" width="100" height="20" fill="none" stroke="#000" strokeWidth="1.5"/>
+          
+          <rect x="480" y="280" width="100" height="40" fill="none" stroke="#000" strokeWidth="2"/>
+          <rect x="490" y="260" width="80" height="20" fill="none" stroke="#000" strokeWidth="1.5"/>
+          
+          {/* Center area people */}
+          <circle cx="420" cy="220" r="6" fill="#000"/>
+          <path d="M420 226 L420 250" stroke="#000" strokeWidth="2"/>
+          <path d="M412 238 L420 233 L428 238" stroke="#000" strokeWidth="1.5"/>
+          
+          <circle cx="520" cy="250" r="6" fill="#000"/>
+          <path d="M520 256 L520 280" stroke="#000" strokeWidth="2"/>
+          <path d="M512 268 L520 263 L528 268" stroke="#000" strokeWidth="1.5"/>
           
           {/* Right side workstations */}
-          <rect x="900" y="350" width="150" height="70" fill="none" stroke="#000" strokeWidth="2"/>
-          <rect x="920" y="300" width="70" height="45" fill="none" stroke="#000" strokeWidth="2"/>
-          <circle cx="955" cy="280" r="15" fill="none" stroke="#000" strokeWidth="2"/>
+          <rect x="720" y="300" width="90" height="45" fill="none" stroke="#000" strokeWidth="2"/>
+          <rect x="740" y="275" width="50" height="25" fill="none" stroke="#000" strokeWidth="1.5"/>
+          <circle cx="765" cy="260" r="8" fill="none" stroke="#000" strokeWidth="1.5"/>
           
-          <rect x="900" y="500" width="120" height="55" fill="none" stroke="#000" strokeWidth="2"/>
-          <rect x="915" y="450" width="50" height="40" fill="none" stroke="#000" strokeWidth="2"/>
+          {/* Right person working */}
+          <circle cx="745" cy="270" r="7" fill="#000"/>
+          <path d="M745 277 L745 300" stroke="#000" strokeWidth="2"/>
+          <path d="M735 288 L745 283 L755 288" stroke="#000" strokeWidth="1.5"/>
           
-          {/* Office chairs (circles with backs) */}
-          <circle cx="110" cy="480" r="20" fill="none" stroke="#000" strokeWidth="2"/>
-          <path d="M90 470 Q110 450 130 470" stroke="#000" strokeWidth="2" fill="none"/>
+          <rect x="720" y="400" width="85" height="40" fill="none" stroke="#000" strokeWidth="2"/>
+          <rect x="735" y="380" width="45" height="20" fill="none" stroke="#000" strokeWidth="1.5"/>
           
-          <circle cx="270" cy="520" r="18" fill="none" stroke="#000" strokeWidth="2"/>
-          <path d="M252 510 Q270 495 288 510" stroke="#000" strokeWidth="2" fill="none"/>
+          {/* Right area person */}
+          <circle cx="750" cy="375" r="6" fill="#000"/>
+          <path d="M750 381 L750 400" stroke="#000" strokeWidth="2"/>
+          <path d="M742 390 L750 385 L758 390" stroke="#000" strokeWidth="1.5"/>
           
-          <circle cx="955" cy="440" r="22" fill="none" stroke="#000" strokeWidth="2"/>
-          <path d="M933 430 Q955 410 977 430" stroke="#000" strokeWidth="2" fill="none"/>
+          {/* Office chairs */}
+          <circle cx="90" cy="370" r="12" fill="none" stroke="#000" strokeWidth="1.5"/>
+          <path d="M78 360 Q90 350 102 360" stroke="#000" strokeWidth="1.5" fill="none"/>
           
-          <circle cx="960" cy="580" r="20" fill="none" stroke="#000" strokeWidth="2"/>
-          <path d="M940 570 Q960 550 980 570" stroke="#000" strokeWidth="2" fill="none"/>
+          <circle cx="172" cy="400" r="11" fill="none" stroke="#000" strokeWidth="1.5"/>
+          <path d="M161 390 Q172 382 183 390" stroke="#000" strokeWidth="1.5" fill="none"/>
           
-          {/* Plants and decor */}
-          <rect x="150" y="600" width="30" height="30" fill="none" stroke="#000" strokeWidth="2"/>
-          <path d="M165 600 Q155 580 160 560 Q165 555 170 560 Q175 580 165 600" fill="none" stroke="#000" strokeWidth="2"/>
-          <path d="M140 570 Q165 550 190 570" fill="none" stroke="#000" strokeWidth="2"/>
+          <circle cx="765" cy="320" r="13" fill="none" stroke="#000" strokeWidth="1.5"/>
+          <path d="M752 310 Q765 300 778 310" stroke="#000" strokeWidth="1.5" fill="none"/>
           
-          <rect x="800" y="650" width="25" height="25" fill="none" stroke="#000" strokeWidth="2"/>
-          <path d="M812 650 L807 630 L817 630 Z" fill="none" stroke="#000" strokeWidth="2"/>
-          <path d="M812 650 L792 620 L832 620 Z" fill="none" stroke="#000" strokeWidth="2"/>
+          <circle cx="750" cy="420" r="12" fill="none" stroke="#000" strokeWidth="1.5"/>
+          <path d="M738 410 Q750 402 762 410" stroke="#000" strokeWidth="1.5" fill="none"/>
           
-          {/* Books/shelving */}
-          <rect x="1050" y="200" width="80" height="200" fill="none" stroke="#000" strokeWidth="2"/>
-          <rect x="1055" y="220" width="15" height="30" fill="none" stroke="#000" strokeWidth="2"/>
-          <rect x="1072" y="215" width="15" height="35" fill="none" stroke="#000" strokeWidth="2"/>
-          <rect x="1089" y="225" width="15" height="25" fill="none" stroke="#000" strokeWidth="2"/>
-          <rect x="1106" y="210" width="15" height="40" fill="none" stroke="#000" strokeWidth="2"/>
-          
-          {/* Window frames */}
-          <rect x="50" y="180" width="80" height="120" fill="none" stroke="#000" strokeWidth="2"/>
-          <line x1="90" y1="180" x2="90" y2="300" stroke="#000" strokeWidth="1"/>
-          <line x1="50" y1="240" x2="130" y2="240" stroke="#000" strokeWidth="1"/>
-          
-          <rect x="1070" y="180" width="80" height="120" fill="none" stroke="#000" strokeWidth="2"/>
-          <line x1="1110" y1="180" x2="1110" y2="300" stroke="#000" strokeWidth="1"/>
-          <line x1="1070" y1="240" x2="1150" y2="240" stroke="#000" strokeWidth="1"/>
-          
-          {/* People silhouettes */}
-          <circle cx="110" cy="420" r="12" fill="none" stroke="#000" strokeWidth="2"/>
-          <path d="M110 432 L110 480" stroke="#000" strokeWidth="3"/>
-          <path d="M95 450 L110 440 L125 450" stroke="#000" strokeWidth="2"/>
-          <path d="M110 480 L95 520 M110 480 L125 520" stroke="#000" strokeWidth="2"/>
-          
-          <circle cx="270" cy="470" r="10" fill="none" stroke="#000" strokeWidth="2"/>
-          <path d="M270 480 L270 520" stroke="#000" strokeWidth="2"/>
-          <path d="M255 500 L270 490 L285 500" stroke="#000" strokeWidth="2"/>
-          <path d="M270 520 L260 550 M270 520 L280 550" stroke="#000" strokeWidth="2"/>
-          
-          <circle cx="955" cy="390" r="11" fill="none" stroke="#000" strokeWidth="2"/>
-          <path d="M955 401 L955 440" stroke="#000" strokeWidth="2"/>
-          <path d="M942 420 L955 410 L968 420" stroke="#000" strokeWidth="2"/>
-          <path d="M955 440 L945 470 M955 440 L965 470" stroke="#000" strokeWidth="2"/>
+          {/* Shelving unit on right */}
+          <rect x="860" y="150" width="60" height="150" fill="none" stroke="#000" strokeWidth="2"/>
+          <rect x="865" y="160" width="10" height="25" fill="none" stroke="#000" strokeWidth="1"/>
+          <rect x="877" y="155" width="10" height="30" fill="none" stroke="#000" strokeWidth="1"/>
+          <rect x="889" y="165" width="10" height="20" fill="none" stroke="#000" strokeWidth="1"/>
+          <rect x="901" y="150" width="10" height="35" fill="none" stroke="#000" strokeWidth="1"/>
         </svg>
       </div>
       
