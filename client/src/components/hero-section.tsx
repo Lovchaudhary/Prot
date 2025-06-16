@@ -10,8 +10,27 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center px-6 bg-background">
-      <div className="text-center max-w-4xl">
+    <section id="hero" className="min-h-screen flex items-center justify-center px-6 bg-background relative overflow-hidden">
+      {/* Office Background Elements */}
+      <div className="office-plant" style={{ left: '10%' }}>
+        <div className="text-6xl">🪴</div>
+      </div>
+      <div className="office-plant" style={{ right: '15%' }}>
+        <div className="text-5xl">🌿</div>
+      </div>
+      <div className="office-desk" style={{ left: '5%' }}>
+        <div className="text-8xl">🖥️</div>
+      </div>
+      <div className="office-desk" style={{ right: '8%' }}>
+        <div className="text-7xl">📚</div>
+      </div>
+      
+      {/* Animated Cat */}
+      <div className="cat-animation">
+        <div className="text-4xl">🐱</div>
+      </div>
+      
+      <div className="text-center max-w-4xl relative z-10">
         <motion.h1 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -57,6 +76,19 @@ export default function HeroSection() {
           View My Projects
         </motion.button>
       </div>
+      
+      {/* Sneak Peek of About Section */}
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1.2 }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center"
+      >
+        <p className="text-gray-500 text-sm mb-2">Get to know me better</p>
+        <div className="w-6 h-6 border-2 border-gray-400 rounded-full mx-auto animate-bounce">
+          <div className="w-1 h-1 bg-gray-400 rounded-full mx-auto mt-2"></div>
+        </div>
+      </motion.div>
     </section>
   );
 }

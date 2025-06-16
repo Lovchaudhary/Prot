@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(45, 20%, 96%);
+  --background: hsl(40, 25%, 94%);
   --foreground: hsl(0, 0%, 0%);
-  --muted: hsl(45, 15%, 92%);
+  --muted: hsl(40, 20%, 90%);
   --muted-foreground: hsl(0, 0%, 45%);
-  --popover: hsl(45, 20%, 96%);
+  --popover: hsl(40, 25%, 94%);
   --popover-foreground: hsl(0, 0%, 0%);
   --card: hsl(0, 0%, 100%);
   --card-foreground: hsl(0, 0%, 0%);
@@ -15,9 +15,9 @@
   --input: hsl(0, 0%, 90%);
   --primary: hsl(0, 0%, 0%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(45, 15%, 92%);
+  --secondary: hsl(40, 20%, 90%);
   --secondary-foreground: hsl(0, 0%, 0%);
-  --accent: hsl(45, 15%, 92%);
+  --accent: hsl(40, 20%, 90%);
   --accent-foreground: hsl(0, 0%, 0%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(0, 0%, 100%);
@@ -70,5 +70,37 @@
 
   .project-image-hover {
     @apply transition-transform duration-500 ease-in-out group-hover:scale-110;
+  }
+
+  /* Cat running animation */
+  .cat-animation {
+    position: absolute;
+    bottom: 20%;
+    animation: catRun 15s linear infinite;
+    z-index: 1;
+  }
+
+  @keyframes catRun {
+    0% {
+      left: -60px;
+    }
+    100% {
+      left: calc(100% + 60px);
+    }
+  }
+
+  /* Office elements */
+  .office-plant {
+    position: absolute;
+    bottom: 10%;
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+  .office-desk {
+    position: absolute;
+    bottom: 5%;
+    opacity: 0.08;
+    z-index: 1;
   }
 }

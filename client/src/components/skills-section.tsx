@@ -32,12 +32,12 @@ export default function SkillsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="flex flex-col items-center justify-center p-6 bg-white border border-gray-200 rounded-lg hover:border-gray-400 hover:shadow-md transition-all duration-300 cursor-pointer group min-h-[120px]"
+                className="flex flex-col items-center justify-center p-6 bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-200 rounded-xl hover:border-indigo-400 hover:shadow-lg hover:from-indigo-100 hover:to-purple-100 transition-all duration-300 cursor-pointer group min-h-[120px]"
               >
                 <div className="text-3xl mb-3 group-hover:scale-110 transition-transform">
                   {skill.icon}
                 </div>
-                <span className="text-sm font-medium text-center text-gray-700">{skill.name}</span>
+                <span className="text-sm font-medium text-center text-indigo-800">{skill.name}</span>
               </motion.div>
             ))}
           </div>
