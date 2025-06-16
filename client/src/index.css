@@ -72,20 +72,50 @@
     @apply transition-transform duration-500 ease-in-out group-hover:scale-110;
   }
 
-  /* Cat running animation */
+  /* Cat walking animation */
   .cat-animation {
     position: absolute;
-    bottom: 20%;
-    animation: catRun 15s linear infinite;
+    bottom: 15%;
+    animation: catWalk 20s linear infinite;
     z-index: 1;
   }
 
-  @keyframes catRun {
+  @keyframes catWalk {
     0% {
+      left: -100px;
+      transform: scaleX(1);
+    }
+    45% {
+      left: calc(50% - 30px);
+      transform: scaleX(1);
+    }
+    50% {
+      left: calc(50% - 30px);
+      transform: scaleX(-1);
+    }
+    95% {
       left: -60px;
+      transform: scaleX(-1);
     }
     100% {
-      left: calc(100% + 60px);
+      left: -100px;
+      transform: scaleX(1);
+    }
+  }
+
+  /* Cat SVG styling */
+  .cat-svg {
+    width: 60px;
+    height: 40px;
+    animation: catBounce 0.8s ease-in-out infinite alternate;
+  }
+
+  @keyframes catBounce {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-4px);
     }
   }
 

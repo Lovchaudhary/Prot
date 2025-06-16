@@ -11,23 +11,60 @@ export default function HeroSection() {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center px-6 bg-background relative overflow-hidden">
-      {/* Office Background Elements */}
-      <div className="office-plant" style={{ left: '10%' }}>
-        <div className="text-6xl">🪴</div>
+      {/* Office Background Elements - Line Art Style */}
+      <div className="office-plant" style={{ left: '8%' }}>
+        <svg width="80" height="120" viewBox="0 0 80 120" fill="none" className="opacity-[0.05]">
+          <rect x="25" y="90" width="30" height="30" fill="none" stroke="#000" strokeWidth="2"/>
+          <path d="M40 90 Q30 70 35 50 Q40 45 45 50 Q50 70 40 90" fill="none" stroke="#000" strokeWidth="2"/>
+          <path d="M20 60 Q40 40 60 60" fill="none" stroke="#000" strokeWidth="2"/>
+        </svg>
       </div>
-      <div className="office-plant" style={{ right: '15%' }}>
-        <div className="text-5xl">🌿</div>
+      <div className="office-plant" style={{ right: '12%' }}>
+        <svg width="60" height="100" viewBox="0 0 60 100" fill="none" className="opacity-[0.05]">
+          <rect x="20" y="80" width="20" height="20" fill="none" stroke="#000" strokeWidth="2"/>
+          <path d="M30 80 L25 60 L35 60 Z" fill="none" stroke="#000" strokeWidth="2"/>
+          <path d="M30 80 L20 50 L40 50 Z" fill="none" stroke="#000" strokeWidth="2"/>
+        </svg>
       </div>
-      <div className="office-desk" style={{ left: '5%' }}>
-        <div className="text-8xl">🖥️</div>
+      <div className="office-desk" style={{ left: '3%' }}>
+        <svg width="150" height="80" viewBox="0 0 150 80" fill="none" className="opacity-[0.04]">
+          <rect x="10" y="40" width="130" height="30" fill="none" stroke="#000" strokeWidth="2"/>
+          <rect x="50" y="20" width="50" height="30" fill="none" stroke="#000" strokeWidth="2"/>
+          <circle cx="25" cy="35" r="8" fill="none" stroke="#000" strokeWidth="2"/>
+        </svg>
       </div>
-      <div className="office-desk" style={{ right: '8%' }}>
-        <div className="text-7xl">📚</div>
+      <div className="office-desk" style={{ right: '5%' }}>
+        <svg width="100" height="90" viewBox="0 0 100 90" fill="none" className="opacity-[0.04]">
+          <rect x="20" y="60" width="60" height="25" fill="none" stroke="#000" strokeWidth="2"/>
+          <rect x="25" y="45" width="8" height="20" fill="none" stroke="#000" strokeWidth="2"/>
+          <rect x="35" y="40" width="8" height="25" fill="none" stroke="#000" strokeWidth="2"/>
+          <rect x="45" y="35" width="8" height="30" fill="none" stroke="#000" strokeWidth="2"/>
+        </svg>
       </div>
       
       {/* Animated Cat */}
       <div className="cat-animation">
-        <div className="text-4xl">🐱</div>
+        <svg className="cat-svg" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* Cat body */}
+          <ellipse cx="30" cy="28" rx="18" ry="8" fill="#333" stroke="#000" strokeWidth="1"/>
+          {/* Cat head */}
+          <circle cx="45" cy="20" r="8" fill="#333" stroke="#000" strokeWidth="1"/>
+          {/* Cat ears */}
+          <path d="M38 15 L40 10 L42 15" fill="#333" stroke="#000" strokeWidth="1"/>
+          <path d="M48 15 L50 10 L52 15" fill="#333" stroke="#000" strokeWidth="1"/>
+          {/* Cat tail */}
+          <path d="M12 25 Q5 20 8 15" fill="none" stroke="#333" strokeWidth="2" strokeLinecap="round"/>
+          {/* Cat legs */}
+          <line x1="20" y1="35" x2="20" y2="38" stroke="#333" strokeWidth="2" strokeLinecap="round"/>
+          <line x1="25" y1="35" x2="25" y2="38" stroke="#333" strokeWidth="2" strokeLinecap="round"/>
+          <line x1="35" y1="35" x2="35" y2="38" stroke="#333" strokeWidth="2" strokeLinecap="round"/>
+          <line x1="40" y1="35" x2="40" y2="38" stroke="#333" strokeWidth="2" strokeLinecap="round"/>
+          {/* Cat eyes */}
+          <circle cx="42" cy="18" r="1.5" fill="#000"/>
+          <circle cx="48" cy="18" r="1.5" fill="#000"/>
+          {/* Cat nose */}
+          <circle cx="45" cy="22" r="1" fill="#ff69b4"/>
+        </svg>
       </div>
       
       <div className="text-center max-w-4xl relative z-10">
